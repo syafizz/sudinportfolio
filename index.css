@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Caveat&family=Codystar:wght@300&family=Courgette&family=Croissant+One&family=Eater&family=Faster+One&family=Fjalla+One&family=Frijole&family=Germania+One&family=Great+Vibes&family=Hurricane&family=Kaushan+Script&family=Lobster&family=Mea+Culpa&family=Monsieur+La+Doulaise&family=Notable&family=Pacifico&family=Permanent+Marker&family=Playball&family=Press+Start+2P&family=Quicksand&family=Rochester&family=Rubik+Beastly&family=Ruslan+Display&family=Sacramento&family=Sevillana&family=Shadows+Into+Light&family=Shojumaru&family=Sofia&family=Staatliches&family=Tangerine&family=Teko:wght@700&family=Unica+One&display=swap");
+
+:root {
+  --bg-color: #1e90ff;
+  --text-color: rgb(37, 17, 37);
+  --secondary-color: #d6ed17ff;
+  --box-margin: 6px 12px;
+  --box-padding: 10px 12px;
+  --normal-padding: 8px 10px;
+  --body-fontFamily: "Press Start 2P", cursive;
+  --heading-fontFamily: "Kaushan Script", cursive;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  outline: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  margin-top: 20px;
+  background-color: #eee;
+}
+
+/*------------------------------------- HEADER ---------------------------------------  */
+
+.home-5-bg {
+  background: var(--bg-color);
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+}
+
+header {
+  position: relative;
+}
+
+.home-5-content {
+  z-index: 1;
+  position: relative;
+}
+
+.bg-overlay {
+  background-color: #000;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.home-desc-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home-5-content {
+  z-index: 1;
+  position: relative;
+}
+
+.text-white-70 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+.home-5-bg #particles-js {
+  z-index: 1 !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------------- NAVBAR --------------------------------------  */
+
+nav {
+  z-index: 10;
+  opacity: 0.9;
+  box-shadow: 2px 0px 12px black;
+}
+
+/* ----------------------------------------- ABOUT ME --------------------------------------- */
+
+
+/* ----------------------------------------- POJECT --------------------------------------- */
+.card{
+  transition: background-color .1s .2s ease-in;
+}
+.card:hover{
+  background-color: #0e4183a1;
+  color: whitesmoke;
+  box-shadow: 3px 0px 8px gray;
+  transform: scaleY(1.05);
+}
+.card:hover>.card-footer{
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* ------------------------------------- EDUCATION --------------------------------------- */
+.timeline {
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 5rem;
+  margin: 0 auto 1rem auto;
+  overflow: hidden;
+  color: #bcd0f7;
+}
+.timeline:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  border-right: 2px dashed #4b546f;
+  height: 100%;
+  display: block;
+}
+
+.timeline-row {
+  padding-left: 50%;
+  position: relative;
+  margin-bottom: 30px;
+}
+.timeline-row .timeline-time {
+  position: absolute;
+  right: 50%;
+  top: 15px;
+  text-align: right;
+  margin-right: 20px;
+  color: #272c37;
+  font-size: 1.5rem;
+}
+.timeline-row .timeline-time small {
+  display: block;
+  font-size: 0.8rem;
+}
+.timeline-row .timeline-content {
+  position: relative;
+  padding: 20px 30px;
+  background: #1a233a;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.timeline-row .timeline-content:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  height: 16px;
+  width: 16px;
+  background: #1a233a;
+}
+.timeline-row .timeline-content:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -49px;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  z-index: 10;
+  background: #272e48;
+  border: 2px dashed #4b546f;
+}
+.timeline-row .timeline-content h4 {
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 150%;
+}
+.timeline-row .timeline-content p {
+  margin-bottom: 30px;
+  line-height: 150%;
+}
+.timeline-row .timeline-content i {
+  font-size: 1.2rem;
+  line-height: 100%;
+  padding: 15px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #272e48;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.timeline-row .timeline-content .thumbs {
+  margin-bottom: 20px;
+  display: flex;
+}
+.timeline-row .timeline-content .thumbs img {
+  margin: 5px;
+  max-width: 60px;
+}
+.timeline-row .timeline-content .badge {
+  color: #ffffff;
+  background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+}
+.timeline-row .timeline-content .success {
+  color: #ffffff;
+  background: linear-gradient(120deg, #0be400 0%, #6cfc38 100%);
+}
+.timeline-row .timeline-content .pursuing {
+  color: #ffffff;
+  background: linear-gradient(120deg, #7f7f7f 0%, #8c8f8b 100%);
+}
+.timeline-row:nth-child(even) .timeline-content {
+  margin-left: 40px;
+  text-align: left;
+}
+.timeline-row:nth-child(even) .timeline-content:after {
+  left: -8px;
+  right: initial;
+  border-bottom: 0;
+  border-left: 0;
+  transform: rotate(-135deg);
+}
+.timeline-row:nth-child(even) .timeline-content:before {
+  left: -52px;
+  right: initial;
+}
+.timeline-row:nth-child(odd) {
+  padding-left: 0;
+  padding-right: 50%;
+}
+.timeline-row:nth-child(odd) .timeline-time {
+  right: auto;
+  left: 50%;
+  text-align: left;
+  margin-right: 0;
+  margin-left: 20px;
+}
+.timeline-row:nth-child(odd) .timeline-content {
+  margin-right: 40px;
+}
+.timeline-row:nth-child(odd) .timeline-content:after {
+  right: -8px;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+}
+
+/* ----------------------------------------- CONTACT ME --------------------------------------- */
+.con-left {
+  width: 40%;
+  height: 80vh;
+  padding: auto;
+  /* background-color: #ff6600; */
+}
+.con-left > h1 {
+  text-align: center;
+  color: var(--text-color);
+  text-shadow: 3px 3px 3px var(--bg-color);
+  font-family: "Arizonia", cursive;
+}
+.con-left .social-icons {
+  margin: 12px auto;
+  text-align: center;
+}
+.con-left .social-icons a img {
+  margin: 6px;
+  width: 70px;
+  height: 70px;
+  transition: transform, padding-bottom 0.2s ease-in-out;
+}
+.con-left .social-icons a img:hover {
+  transform: scale(1.2);
+  padding-bottom: 8px;
+}
+.con-right {
+  width: 80%;
+  height: 80vh;
+  padding: auto;
+  position: relative;
+  /* background-color: #4dff00; */
+}
+
+@keyframes slider {
+  100% {
+    transform: translate(400px, 400px);
+  }
+}
+form {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 4px 6px rgb(0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+form::before {
+  content: "";
+  width: 1200px;
+  height: 80px;
+  transform: rotate(-45deg) translate(-350px, -680px);
+  background-color: #ffffffd5;
+  position: absolute;
+  top: 20;
+  z-index: -1;
+}
+form:hover::before {
+  animation: slider 1.6s 0.4s infinite alternate;
+}
+
+.form-elements {
+  font-family: "Pacifico", cursive;
+  font-weight: bolder;
+  color: rgb(29, 28, 26);
+  margin: 8px auto;
+  width: 80%;
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 22px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.form-elements:focus {
+  border: 3px solid blueviolet;
+}
+.submit-btn {
+  width: 34%;
+  padding: 8px 0px;
+  border: 3px solid #6afb2b;
+  transition: background-color, transform 0.2s 0.2s ease-in-out;
+}
+.submit-btn:hover {
+  transform: scale(1.05);
+  background-color: #4bf800;
+}
+
+
+
+
+
+/* __________________________________ MEDIA QUERIES _____________________________________ */
+
+/* ------------------------------ EDUCATION ------------------------------ */
+/* ------------------------------ EDUCATION ------------------------------ */
+@media (max-width: 992px) {
+  .timeline {
+    padding: 15px;
+  }
+  .timeline:after {
+    border: 0;
+  }
+  .timeline .timeline-row:nth-child(odd) {
+    padding: 0;
+  }
+  .timeline .timeline-row:nth-child(odd) .timeline-time {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 0 10px 0;
+  }
+  .timeline .timeline-row:nth-child(odd) .timeline-content {
+    margin: 0;
+  }
+  .timeline .timeline-row:nth-child(odd) .timeline-content:before {
+    display: none;
+  }
+  .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+    display: none;
+  }
+  .timeline .timeline-row:nth-child(even) {
+    padding: 0;
+  }
+  .timeline .timeline-row:nth-child(even) .timeline-time {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+  .timeline .timeline-row:nth-child(even) .timeline-content {
+    margin: 0;
+  }
+  .timeline .timeline-row:nth-child(even) .timeline-content:before {
+    display: none;
+  }
+  .timeline .timeline-row:nth-child(even) .timeline-content:after {
+    display: none;
+  }
+}
+
+/* ------------------------------ CONTACT ------------------------------ */
+@media only screen and (max-width: 360px) {
+  .con-wrapper {
+    flex-direction: column;
+  }
+}
